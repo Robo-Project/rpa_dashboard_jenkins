@@ -26,7 +26,7 @@ RUN apt-get update \
     && apt-get autoremove -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
-    && pip3 install dbbot-sqlalchemy psycopg2
+    && pip3 install dbbot-sqlalchemy psycopg2 sqlalchemy
 
 USER jenkins
 
